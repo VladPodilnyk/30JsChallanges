@@ -1,0 +1,25 @@
+body, html {
+    background-image: url("../../public/drumkit/vinyl-4808792__340.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.drumkit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: solid white;
+    height: 100vh;
+}
+
+.pad {
+    text-align: center;
+    color: white;
+    margin: 1rem;
+    padding: 5rem;
+    border: solid aqua;
+}
