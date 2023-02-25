@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         @import url("../styles/drumkit.css");
@@ -11,25 +10,37 @@
   </head>
   <body>
     <div class="drumkit">
-        <div class="pad">
-            snair
+        <div data-key="97" class="pad">
+            <kbd>A</kbd>
+            <span class="sound">Kick Puch</span>
         </div>
-        <div class="pad">
-            kick
+        <div data-key="115" class="pad">
+            <kbd>S</kbd>
+            <span class="sound">Bap</span>
         </div>
-        <div class="pad">
-            1
+        <div data-key="100" class="pad">
+            <kbd>D</kbd>
+            <span class="sound">Long 8-bit</span>
         </div>
-        <div class="pad">
-            2
+        <div data-key="102" class="pad">
+            <kbd>F</kbd>
+            <span class="sound">Thud Snare</span>
         </div>
-        <div class="pad">
-            3
+        <div data-key="103" class="pad">
+            <kbd>G</kbd>
+            <span class="sound">Snapping Bap</span>
         </div>
-        <div class="pad">
-            4
+        <div data-key="104" class="pad">
+            <kbd>H</kbd>
+            <span class="sound">TYMF</span>
         </div>
     </div>
-    <!-- <script type="module" src="./script.ts"></script> -->
+    <audio data-key="97" src="/drumkit/sounds/kick-punch.wav"></audio>
+    <audio data-key="115" src="/drumkit/sounds/bap.wav"></audio>
+    <audio data-key="100" src="/drumkit/sounds/noise-808-kick.wav"></audio>
+    <audio data-key="102" src="/drumkit/sounds/thud-snare.wav"></audio>
+    <audio data-key="103" src="/drumkit/sounds/snappin-bap.wav"></audio>
+    <audio data-key="104" src="/drumkit/sounds/trigger-bap.wav"></audio>
+    <script src="../src/drumkit/script.ts"></script>
   </body>
 </html>
